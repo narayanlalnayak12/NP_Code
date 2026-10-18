@@ -1,0 +1,11 @@
+# .NET build output
+[Bb]in/
+[Oo]bj/
+.vs/
+
+# Per-user IDE settings
+*.user
+*.suo
+
+# Local application state
+app-state.json

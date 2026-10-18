@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Desktop App",
+      "type": "shell",
+      "command": "dotnet build \"${workspaceFolder}/SelectPhotos.Desktop/SelectPhotos.Desktop.csproj\" --configuration Debug",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Start Desktop App",
+      "type": "shell",
+      "command": "dotnet run --project \"${workspaceFolder}/SelectPhotos.Desktop/SelectPhotos.Desktop.csproj\"",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}

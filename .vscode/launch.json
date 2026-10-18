@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "SelectPhotos Desktop",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/SelectPhotos.Desktop/bin/Debug/net9.0-windows/SelectPhotos.Desktop.dll",
+      "cwd": "${workspaceFolder}/SelectPhotos.Desktop",
+      "console": "internalConsole",
+      "stopAtEntry": false,
+      "justMyCode": true
+    },
+    {
+      "name": "Attach to SelectPhotos Desktop",
+      "type": "coreclr",
+      "request": "attach",
+      "processId": "${command:pickProcess}",
+      "justMyCode": true
+    }
+  ]
+}
